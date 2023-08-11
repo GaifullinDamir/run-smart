@@ -3,3 +3,13 @@
 * {
     font-family: 'MuseoSansCyrl', sans-serif;
 }
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import 'base/variables';
+@import 'blocks/buttons';
+@import 'blocks/promo';
+@import 'blocks/header';
