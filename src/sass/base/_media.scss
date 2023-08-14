@@ -1,26 +1,40 @@
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .container {
-        width: 650px;
-    }    
-    
+        width: 725px;
+    }
+}
+
+@media (max-width: 768px) {
     .header {
         &__logo {
-            width: 200px;
+            width: 175px;
         }
         &__phone {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 
+    .container {
+        width: 550px;
+    }    
+
     .promo {
+        min-height: 580px;
+        padding-bottom: 50px;
         &__header {
-            font-size: 32px;
+            font-size: 26px;
         }
         &__subheader {
-            font-size: 18px;
+            font-size: 16px;
+        }
+        &__icon {
+            font-size: 12px;
+            img {
+                width: 35px;
+            }
         }
         &__link {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
@@ -28,9 +42,61 @@
         width: 140px;
         height: 30px;
         &_main {
-            width: 160px;
-            height: 40px;
+            width: 200px;
+            height: 35px;
             font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .header {
+        flex-direction: column;
+        &__logo {
+            width: 250px;
+        }
+        &__official {
+            margin-top: 15px;
+            span {
+                font-size: 16px;
+            }
+        }
+        &__contacts {
+            align-items: center;
+        }
+        &__phone {
+            margin-top: 35px;
+            font-size: 14px;
+        }
+    }
+
+    .container {
+        width: 250px;
+    }
+
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__subheader {
+            text-align: center;
+        }
+        &__icons {
+            flex-direction: column;
+        }
+        &__icon {
+            margin-bottom: 25px;
+            margin-left: 0;
+            font-size: 16px;
+            &:nth-child(3) {
+                margin-bottom: 0;
+            }
+            img {
+                width: 50px;
+            }
         }
     }
 }
