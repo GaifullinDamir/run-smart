@@ -45,4 +45,15 @@
             margin-bottom: 15px;
         }
     }
+    &__link {
+        margin-top: 15px;
+        color: $text-color;
+        font-size: 16px;
+        font-weight: 300;
+        a {
+            color: $text-color;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    }
 }
