@@ -7,13 +7,6 @@
         flex-direction: column;
         justify-content: center;
     }
-    &__header {
-        margin: 0;
-        color: $secondary-text-color;
-        text-align: center;
-        font-size: 30px;
-        font-weight: 700;
-    }
     &__icons {
         display: flex;
         justify-content: center;
