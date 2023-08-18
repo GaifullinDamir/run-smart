@@ -21,11 +21,13 @@
         &__inner {
             width: 500px;
         }
-        .arrow-prev {
-            left: 5px;
-        }
-        .arrow-next {
-            right: 5px;
+        &__controls {
+            .arrow-prev {
+                left: 5px;
+            }
+            .arrow-next {
+                right: 5px;
+            }
         }
     }
 }
@@ -93,7 +95,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 15px;
+        margin-top: 15px;
         [data-nav="1"] {
             margin: 0 15px 0 15px;
         }
@@ -102,6 +104,7 @@
             padding: 6px;
         }
         button {
+            display: block;
             padding: 5px;
             border-radius: 50%;
             background-color: $main-color-tp50;
@@ -113,8 +116,10 @@
         &__inner {
             width: 450px;
         }
-        .arrow-prev, .arrow-next {
-            display: none;
+        &__controls {
+            .arrow-prev, .arrow-next {
+                display: none;
+            }
         }
     }
 
@@ -204,6 +209,21 @@
             font-size: 14px;
             line-height: 1.75;
             margin-top: 15px;
+        }
+    }
+    .tns-item {
+        img {
+            width: 200px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 200px;
+        }
+        &__controls {
+            .arrow-prev, .arrow-next {
+                display: none;
+            }
         }
     }
 

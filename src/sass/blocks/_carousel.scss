@@ -1,28 +1,30 @@
 .carousel {
-    min-height: 750px;
-    padding: 80px 0;
+    // min-height: 750px;
+    padding: 60px 0;
     background-color: #fff;
     &__inner {
         position: relative;
         width: 750px;
         margin: 0 auto;
     }
-    .arrow-prev, .arrow-next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -55px;
-        border: none;
-        background-color: #ffffff00;
-        img {
-            width: 31px;
-            height: 50px;
+    &__controls {
+        .arrow-prev, .arrow-next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -25px;
+            border: none;
+            background-color: #ffffff00;
+            img {
+                width: 31px;
+                height: 50px;
+            }
         }
-    }
-    .arrow-next {
-        left: auto;
-        right: -55px;
+        .arrow-next {
+            left: auto;
+            right: -25px;
+        }
     }
     .tns-item {
         img {

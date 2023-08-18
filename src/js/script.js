@@ -5,36 +5,25 @@ document.addEventListener('DOMContentLoaded', ()=> {
         container: '.carousel__inner',
         items: 1,
         speed: 1500,
-        // autoHeight: true,
+        autoHeight: true,
         slideBy: 'page',
-        // autoplay: true,
-        // autoplayTimeout: 5000,
-        // autoplayButtonOutput: false,
+        autoplay: true,
+        autoplayTimeout: 7000,
+        autoplayButtonOutput: false,
+        preventScrollOnTouch: 'auto',
         arrowKeys: true,
-        nav: false,
-        controls: false,
+        navPosition: 'bottom',
+        controlsContainer: '.carousel__controls',
+        nav: true,
+        navAsThumbnails: true,
         responsive: {
-            '991': {
-                nav: false
-            },
-            '768': {
-                nav: false
-            },
-            '576': {
+            576: {
                 nav: true
             },
-            
+            768: {
+                nav: false
+            }
           }
-      
       });    
-    
-    document.querySelector('.arrow-prev').addEventListener('click', (e) => {
-        e.preventDefault();
-        slider.goTo('prev');
-    })
-    document.querySelector('.arrow-next').addEventListener('click', (e) => {
-        e.preventDefault();
-        slider.goTo('next')
-    })
 });
 
