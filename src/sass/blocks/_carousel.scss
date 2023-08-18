@@ -1,5 +1,4 @@
 .carousel {
-    // min-height: 750px;
     padding: 60px 0;
     background-color: #fff;
     &__inner {
@@ -17,6 +16,7 @@
             border: none;
             background-color: #ffffff00;
             img {
+                @include slider_arrow_hover;
                 width: 31px;
                 height: 50px;
             }

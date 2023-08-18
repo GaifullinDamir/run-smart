@@ -1,0 +1,7 @@
+@mixin slider_arrow_hover {
+    transition: 0.3s all;
+    &:hover {
+        width: 25px;
+        height: 42px;
+    }
+}
