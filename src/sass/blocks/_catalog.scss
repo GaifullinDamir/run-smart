@@ -1,0 +1,33 @@
+.catalog {
+    padding-bottom: 85px;
+    &__tabs {
+        margin-top: 45px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__tab {
+        width: 222px;
+        height: 52px;
+        background-color: rgba(0, 0, 0, 0.00);
+        border: 2px solid #D0D0D0;
+        color: #6B6B6B;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 48px;
+        transform: skewX(-20deg);
+        margin: 0 5px;
+        cursor: pointer;
+        div {
+            transform: skewX(20deg);
+        }
+        &_active {
+            background-color: $main-color;
+            color: $text-color;
+            border: none;
+        }
+    }
+}
