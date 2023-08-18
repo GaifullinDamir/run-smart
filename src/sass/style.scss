@@ -6,11 +6,14 @@
 }
 
 .container {
+    position: relative;
     max-width: 950px;
     margin: 0 auto;
 }
 
 @import 'base/variables';
+@import 'base/mixins';
+
 @import 'blocks/buttons';
 @import 'blocks/titles';
 @import 'blocks/promo';
@@ -18,4 +21,5 @@
 @import 'blocks/advantages';
 @import 'blocks/consultation';
 @import 'blocks/forms';
+@import 'blocks/carousel';
 @import 'base/_media';

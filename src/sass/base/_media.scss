@@ -12,6 +12,24 @@
             font-size: 24px;
         }
     }
+    .tns-item {
+        img {
+            width: 500px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 500px;
+        }
+        &__controls {
+            .arrow-prev {
+                left: 5px;
+            }
+            .arrow-next {
+                right: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -65,6 +83,47 @@
     .consultation {
         &__descr {
             text-align: center;
+        }
+    }
+
+    .tns-item {
+        img {
+            width: 450px;
+        }
+    }
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        
+        [data-nav="1"] {
+            margin: 0 15px 0 15px;
+        }
+        .tns-nav-active {
+            background-color: $main-color;
+            padding: 7px;
+            box-shadow: 0 2px 10px $main-color-tp50;
+        }
+        
+        button {
+            transition: 1s all;
+            display: block;
+            padding: 5px;
+            border-radius: 50%;
+            background-color: $main-color-tp50;
+            border: none;
+        }
+        
+    }
+    .carousel {
+        &__inner {
+            width: 450px;
+        }
+        &__controls {
+            .arrow-prev, .arrow-next {
+                display: none;
+            }
         }
     }
 
@@ -154,6 +213,21 @@
             font-size: 14px;
             line-height: 1.75;
             margin-top: 15px;
+        }
+    }
+    .tns-item {
+        img {
+            width: 200px;
+        }
+    }
+    .carousel {
+        &__inner {
+            width: 200px;
+        }
+        &__controls {
+            .arrow-prev, .arrow-next {
+                display: none;
+            }
         }
     }
 

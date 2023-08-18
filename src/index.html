@@ -7,10 +7,11 @@
     <title>Smart Run</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -53,8 +54,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="advantages">
+    </section>
+    <section class="advantages">
         <div class="container">
             <div class="advantages__wrapper">
                 <h2 class="title">Наши преимущества</h2>
@@ -80,8 +81,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="consultation">
+    </section>
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">
                 Получите бесплатную консультацию<br>
@@ -96,8 +97,33 @@
                 <input name="email" required placeholder="Ваш E-mail" type="email">
                 <!-- <input value="Заказать консультацию" type="submit"> -->
                 <button class="button button_submit">Заказать консультацию</button>
-            </form>
+            </form> 
         </div>
-    </div>
+    </section>
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slides/slide-1.jpg" alt="slide-1">
+                </div>
+                <div>
+                    <img src="img/slides/slide-2.jpg" alt="slide-2">
+                </div>
+                <div>
+                    <img src="img/slides/slide-3.jpg" alt="slide-3">
+                </div>
+            </div>
+            <div class="carousel__controls">
+                <button type="button" class="arrow-prev">
+                    <img src="icons/left-arrow.png" alt="left-arrow"/>
+                </button>
+                <button type="button" class="arrow-next">
+                    <img src="icons/right-arrow.png" alt="right-arrow"/>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
