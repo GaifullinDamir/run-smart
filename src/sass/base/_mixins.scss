@@ -5,3 +5,11 @@
         height: 42px;
     }
 }
+
+@mixin tab_selector_hover {
+    transition: 0.5s all;
+    &:hover {
+        box-shadow: 0 0 15px $main-color-tp50;
+        border-color: rgba(0, 0, 0, 0.00);
+    }
+}
