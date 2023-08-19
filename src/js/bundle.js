@@ -84,22 +84,13 @@ function tabs() {
         })
     })
 
-    const catalogBackLinks = document.querySelectorAll('.catalog-item__back'),
-        catalogLinks = document.querySelectorAll('.catalog-item__link');
+    const catalogItems = document.querySelectorAll('.catalog-item');
 
-    catalogLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
+    catalogItems.forEach(item => {
+        item.addEventListener('click', function(e) {
             e.preventDefault();
-            e.target.offsetParent.classList.remove('catalog-item__content_active');
-            e.target.parentElement.parentElement.children[1].classList.add('catalog-item__list_active');
-        })
-    })
-    catalogBackLinks.forEach(backLink => {
-        backLink.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.target.parentElement.classList.remove('catalog-item__list_active');
-            e.target.parentElement.parentElement.children[0].classList.add('catalog-item__content_active');
-            
+            this.querySelector('.catalog-item__content').classList.toggle('catalog-item__content_active');
+            this.querySelector('.catalog-item__list').classList.toggle('catalog-item__list_active');
         })
     })
 }
