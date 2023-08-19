@@ -1,3 +1,5 @@
+'use strict'
+
 function sliders() {
     const slider = tns({
         container: '.carousel__inner',

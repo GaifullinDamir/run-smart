@@ -40,6 +40,9 @@
         &_active {
             display: flex;
         }
+        &_hide {
+            display: none;
+        }
     }
     &-item {
         padding: 20px;
