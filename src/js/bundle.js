@@ -83,6 +83,25 @@ function tabs() {
             }
         })
     })
+
+    const catalogBackLinks = document.querySelectorAll('.catalog-item__back'),
+        catalogLinks = document.querySelectorAll('.catalog-item__link');
+
+    catalogLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.target.offsetParent.classList.remove('catalog-item__content_active');
+            e.target.parentElement.parentElement.children[1].classList.add('catalog-item__list_active');
+        })
+    })
+    catalogBackLinks.forEach(backLink => {
+        backLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.target.parentElement.classList.remove('catalog-item__list_active');
+            e.target.parentElement.parentElement.children[0].classList.add('catalog-item__content_active');
+            
+        })
+    })
 }
 
 module.exports = tabs;
