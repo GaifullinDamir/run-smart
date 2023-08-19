@@ -36,12 +36,24 @@
     &__content {
         margin-top: 60px;
         display: none;
+        opacity: 0;
         flex-wrap: wrap;
+        transition: 0.5s all;
         &_active {
             display: flex;
+            opacity: 1;
+            animation: fadeInFromNone 1.5s;
         }
         &_hide {
             display: none;
+        }
+    }
+    @keyframes fadeInFromNone {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
         }
     }
     &-item {
