@@ -16,7 +16,9 @@
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "browserslist": [
     "last 1 version",

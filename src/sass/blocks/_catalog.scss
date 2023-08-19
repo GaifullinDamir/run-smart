@@ -35,8 +35,11 @@
     }
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         padding: 20px;
