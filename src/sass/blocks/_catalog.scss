@@ -36,13 +36,13 @@
     &__content {
         margin-top: 60px;
         display: none;
+        justify-content: center;
         opacity: 0;
         flex-wrap: wrap;
         transition: 0.5s all;
         &_active {
             display: flex;
             opacity: 1;
-            // animation: fadeInFromNone 1.5s;
             @include smooth_transition_keyframe;
         }
         &_hide {
@@ -51,15 +51,12 @@
     }
     &-item {
         padding: 20px;
-        width: 303px;
+        width: 290px;
         min-height: 442px;
         background-color: #fff;
         border: 2px solid #E8E8E8;
         overflow: hidden;
-        margin-bottom: 20px;
-        &:nth-child(3n+2) {
-            margin: 0 12px 20px 12px;
-        }
+        margin: 0 7px 20px 7px;
         &__img {
             display: block;
             margin: 0 auto;

@@ -15,7 +15,6 @@ function sliders() {
         container: '.carousel__inner',
         items: 1,
         speed: 1500,
-        // autoHeight: true,
         slideBy: 'page',
         autoplay: true,
         autoplayTimeout: 7000,
@@ -89,8 +88,11 @@ function tabs() {
     catalogItems.forEach(item => {
         item.addEventListener('click', function(e) {
             e.preventDefault();
-            this.querySelector('.catalog-item__content').classList.toggle('catalog-item__content_active');
-            this.querySelector('.catalog-item__list').classList.toggle('catalog-item__list_active');
+            if(e.target == this.querySelector('.catalog-item__link') || e.target == this.querySelector('.catalog-item__back')) {
+                this.querySelector('.catalog-item__content').classList.toggle('catalog-item__content_active');
+                this.querySelector('.catalog-item__list').classList.toggle('catalog-item__list_active');
+            }
+            
         })
     })
 }

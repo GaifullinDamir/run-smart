@@ -30,6 +30,20 @@
             }
         }
     }
+    .catalog {
+        &__tab {
+            width: 150px;
+            height: 40px;
+            line-height: 36px;
+            font-size: 12px;
+        }
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin: 0 7px 20px 7px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
