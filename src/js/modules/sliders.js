@@ -5,7 +5,7 @@ function sliders() {
         container: '.carousel__inner',
         items: 1,
         speed: 1500,
-        autoHeight: true,
+        // autoHeight: true,
         slideBy: 'page',
         autoplay: true,
         autoplayTimeout: 7000,

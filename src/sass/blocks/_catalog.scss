@@ -42,18 +42,11 @@
         &_active {
             display: flex;
             opacity: 1;
-            animation: fadeInFromNone 1.5s;
+            // animation: fadeInFromNone 1.5s;
+            @include smooth_transition_keyframe;
         }
         &_hide {
             display: none;
-        }
-    }
-    @keyframes fadeInFromNone {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
         }
     }
     &-item {
