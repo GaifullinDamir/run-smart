@@ -293,10 +293,14 @@
             }
         }
         &-item {
-            width: 200px;
+            padding: 9px;
+            width: 220px;
             min-height: 350px;
             &__img {
                 height: 150px;
+            }
+            &__subtitle {
+                margin-top: 20px;
             }
             &__content {
                 transform: translateX(-110%);
