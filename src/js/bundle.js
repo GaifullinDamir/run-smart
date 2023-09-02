@@ -2,6 +2,40 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/modules/modals.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/modals.js ***!
+  \**********************************/
+/***/ (function(module) {
+
+
+
+function modals() {
+    const modalsBtns = document.querySelectorAll('[data-modal=consultation]'),
+        modals = document.querySelectorAll('.modal'),
+        modalConsultation = modals[0],
+        modalOrder = modals[1],
+        modalThanks = modals[2],
+        modalsClose = document.querySelectorAll('.modal__close'),
+        overlay = document.querySelector('.overlay');
+    console.log(modalOrder);
+    modalsBtns.forEach(modalBtn => modalBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        overlay.classList.add('overlay_active');
+        if (modalBtn.dataset['modal'] === 'consultation') {
+            modalConsultation.classList.add('modal_active');
+        }
+    }));
+    modalsClose.forEach(closeItem => closeItem.addEventListener('click', (e) => {
+        e.preventDefault();
+        overlay.classList.remove('overlay_active');
+        modals.forEach(modal => modal.classList.remove('modal_active'));
+    }));
+}
+module.exports = modals;
+
+/***/ }),
+
 /***/ "./src/js/modules/sliders.js":
 /*!***********************************!*\
   !*** ./src/js/modules/sliders.js ***!
@@ -138,12 +172,12 @@ var __webpack_exports__ = {};
 
 window.addEventListener('DOMContentLoaded', ()=> {
     const sliders = __webpack_require__(/*! ./modules/sliders */ "./src/js/modules/sliders.js"),
-        tabs = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js");
+        tabs = __webpack_require__(/*! ./modules/tabs */ "./src/js/modules/tabs.js"),
+        modals = __webpack_require__(/*! ./modules/modals */ "./src/js/modules/modals.js");
     sliders();
     tabs();
+    modals();
 });
-
-
 }();
 /******/ })()
 ;

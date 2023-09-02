@@ -1,0 +1,60 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ab;
+    &_active {
+        display: block;
+    }
+}
+
+.modal {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 402px;
+    background-color: #F2F2F2;
+    padding: 38px 40px 40px 40px;
+    &__close {
+        position: absolute;
+        top: 0;
+        right: -40px;
+        font-size: 41px;
+        line-height: 21px;
+        color: $main-color;
+        cursor: pointer;
+    }
+    &__subtitle {
+        color: $secondary-text-color;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    &__descr {
+        color: $secondary-text-color;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 14px;
+    }
+    &_mini {
+        min-height: 140px;
+    }
+    &_active {
+        display: block;
+        opacity: 1;
+        @include smooth_transition_keyframe;
+    }
+}
+
+// #consultation, #order, #thanks {
+//     display: none;
+// }

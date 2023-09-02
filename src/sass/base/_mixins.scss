@@ -15,7 +15,7 @@
 }
 
 @mixin smooth_transition_keyframe {
-    animation: fadeInFromNone 1.5s;
+    animation: fadeInFromNone 0.5s;
     @keyframes fadeInFromNone {
         0% {
           opacity: 0;

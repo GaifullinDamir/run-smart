@@ -2,8 +2,9 @@
 
 window.addEventListener('DOMContentLoaded', ()=> {
     const sliders = require('./modules/sliders'),
-        tabs = require('./modules/tabs');
+        tabs = require('./modules/tabs'),
+        modals = require('./modules/modals');
     sliders();
     tabs();
+    modals();
 });
-
